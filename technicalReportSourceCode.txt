@@ -1,1 +1,74 @@
-this is a txt file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About me</title>
+	<style>
+		.fixed{ position: fixed; top: 0; } /* Apologies for this one external css, Needed it to make nav scroll work*/	
+	</style>
+  <script>
+		/*** PAssword Protecting Webpage ****/		
+			var password=12345, validator=0;
+			while(validator != password){
+				validator=prompt("Please enter password");
+			}
+			alert("Thx. click ok to continue...");
+	</script> 
+</head>
+<body style="background-color: black; color: white; font-size: 20px;">
+	<h1 style="font-size: 12px;">Name: Avijit Singh Jhyont <br/> Sstudent id: 500570906 <br/> This is the main page</h1>
+	<header>
+		<h1 style="text-align:center;">Hi, I am Avijit</h1>
+		<h1 style="text-align:center;">I am a Web Developer</h1>
+	</header>
+	<p>A Few Facts about me:</p>
+	<nav id="navBar" style="z-index: 1; background-color: maroon; color: white; width: 100%; display: flex; flex-wrap: nowrap;">
+		<a href="#f1" style="text-decoration: none; color: white; font-weight: bolder; font-size: 36px; margin-right:15vh; text-align: center;">Fact1</a>
+		<a href="#f2" style="text-decoration: none; color: white; font-weight: bolder; font-size: 36px; margin-right:15vh; text-align: center;">Fact2</a>
+		<a href="#f3" style="text-decoration: none; color: white; font-weight: bolder; font-size: 36px; margin-right:15vh; text-align: center;">Fact3</a>
+		<a href="#f4" style="text-decoration: none; color: white; font-weight: bolder; font-size: 36px; margin-right:15vh; text-align: center;">Fact4</a>
+		<a href="#About" style="text-decoration: none; color: white; font-weight: bolder; font-size: 36px; margin-right:15vh; text-align: center;">About&nbspThis&nbspWebsite</a>
+	</nav>
+	<main>
+		<h2 id="f1" style="padding-top: 10vh;">I love Camping</h2>
+		<img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F35%2F2020%2F06%2F11%2Fbest-camping-tents-tout.jpg&w=380&h=380&c=sc&poi=face&q=85" alt="camping site image" />
+		<p>Camping is cool because:</p>
+		<ul>
+			<li>You get to discover a new you.</li>
+			<li>It's energiing to be in nature.</li>
+			<li>THe camp fire stories are scaretastic.</li>
+		</ul>
+
+		<h2 id="f2" style="padding-top: 10vh;">I love working out</h2>
+		<img src="https://image.shutterstock.com/image-vector/heart-flexing-muscles-cartoon-character-260nw-1724307640.jpg" alt="Gym image" />
+
+		<h2 id="f3" style="padding-top: 10vh;">I love Designing Websites</h2>
+		<img src="https://media.istockphoto.com/vectors/children-coding-lettering-vector-id1084848808" alt="heart image" />
+
+		<h2 id="f4" style="padding-top: 10vh;">I am a ryerson student</h2>
+		<img src="https://c8.alamy.com/comp/F39559/entrance-of-the-ryerson-university-student-centre-in-toronto-letters-F39559.jpg" alt="RU page image" />
+
+		<p style="margin-bottom: 30vh;">Personally, I never felt the need for anything but 'i' tag when needing to italicize text. But recently, I found out about 'cite' tag. <cite>This is the first time I have used the cite tag.</cite></p>		
+
+<!-- Making NavBar Sticky -->
+	<script>	
+    var navBar= document.getElementById("navBar");
+    var fixed= navBar.offsetTop;
+    window.onscroll = function() {
+      if(window.pageYOffset > fixed){
+          navBar.classList.add("fixed");
+     		 } else {
+          navBar.classList.remove("fixed");
+      	 }
+  		};
+	</script>	
+	<Footer id="About" style="color: white;">
+		<h3>About the website:</h3>
+		<ul>
+			<li>This website is html5 complient. In order to get its validation report, <a href="ValidationReport.html">click here</a></li>
+			<li>To get the full technical report of this site, <a href="TechnicalReport.html">click here</a></li>
+		</ul>
+	</Footer>
+</body>
+</html>
