@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Technical Report</title>
+	<style>
+		.fixed{ position: fixed; top: 0; } /* Apologies for this one external css, Needed it to make nav scroll work*/
+	</style>
+</head>
+<body>
+<!-- Header -->
+	<header>
+		<h1 style="text-align: center;">Technical report</h1>
+	</header>
 
+		<nav id="navBar" style="text-align: center;">
+			<a href="#">Actual Html code</a> | 
+			<a href="#">Password Proection Method</a> |
+			<a href="#">New tag Tried</a> |
+			<a href="#">site of diff browsers</a> |
+			<a href="#">Amt spent On Lab</a> 
+		</nav>
+
+		<main>
+			<article>
+				<h2 style="padding-top: 5vh;">Source Code for the Website:</h2>
+				To view the site's source code text file, <a href="technicalReportSourceCode.txt">click here.</a>
+			</article>
+			<article>
+				<h2 style="padding-top: 5vh;">Password pretection Method I used:</h2>
+				<p>The method I used is a while look under javascript at the beginning of html code that prompts for password until the correct one is entered.</p>
+			</article>
+			<article> 
+				<h2 style="padding-top: 5vh;">The New tag that I tried:</h2>
+				<p>The new tag I used was the 'cite' tag. It is useful only to highlight and reference a body of work worth citing in the html content. It is mostly for semantic value than anything else.</p>	
+			</article>
+			<article> 
+				<h2 style="padding-top: 5vh;">Difference I saw in using this site on various browsers:</h2>
+				<p></p>
+			</article>
+			<article>  
+				<h2 style="padding-top: 5vh;">THe amount of time I spent on this Lab:</h2>
+				<p>I spend about 3 days on this lab, But a huge chunk of time was spent learning to use github so I can efficiently host this site via Github.</p>
+			</article> 
+		</main>
+<!-- Making NavBar Sticky -->		
+		<script>
+		var navBar= document.getElementById("navBar");
+    var fixed= navBar.offsetTop;
+    window.onscroll = function() {
+      if(window.pageYOffset > fixed){
+          navBar.classList.add("fixed");
+     		 } else {
+          navBar.classList.remove("fixed");
+      	 }
+  		};
+	</script>
+</body>
+</html>
