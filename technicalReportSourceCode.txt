@@ -49,7 +49,7 @@
 
 		<p style="margin-bottom: 30vh;">Personally, I never felt the need for anything but 'i' tag when needing to italicize text. But recently, I found out about 'cite' tag. <cite>This is the first time I have used the cite tag.</cite></p>		
 	</main>
-	
+	<Footer id="About" style="color: white;">
 	<Footer id="About" style="color: white; font-size: 5vh">
 		<h3>About the website:</h3>
 		<ul>
